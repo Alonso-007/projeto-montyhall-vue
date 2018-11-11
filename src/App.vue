@@ -1,12 +1,17 @@
 <template>
     <div id="app">
         <h1>Problema de Monty Hall</h1>
+        <gift />
     </div>
 </template>
 
 <script>
-    export default {
 
+    import Gift from "./components/Gift";
+
+    export default {
+        name: "App", //nao e obrigado mas ajuda na hora depurar o fonte
+        components: { Gift }
     }
 </script>
 
