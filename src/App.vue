@@ -1,17 +1,18 @@
 <template>
     <div id="app">
         <h1>Problema de Monty Hall</h1>
-        <gift />
+        <!-- : serve para passar parametro false sem o : ia passar a string false -->
+        <Door number="1" :hasGift="false" />
     </div>
 </template>
 
 <script>
 
-    import Gift from "./components/Gift";
+    import Door from "./components/Door";
 
     export default {
         name: "App", //nao e obrigado mas ajuda na hora depurar o fonte
-        components: { Gift }
+        components: { Door }
     }
 </script>
 
